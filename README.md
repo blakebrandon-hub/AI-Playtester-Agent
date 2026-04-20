@@ -27,9 +27,9 @@ pip install flask flask-cors requests anthropic openai google-genai
 
 ### 2. Environment Variables
 The playtester requires an LLM to make decisions. Set **one** of the following environment variables:
-* `ANTHROPIC_API_KEY` (Defaults to `claude-3-5-haiku`)
-* `OPENAI_API_KEY` (Defaults to `gpt-4o-mini`)
-* `GEMINI_API_KEY` (Defaults to `gemini-2.0-flash`)
+* `ANTHROPIC_API_KEY` 
+* `OPENAI_API_KEY` 
+* `GEMINI_API_KEY` 
 
 *Example (Mac/Linux):*
 ```bash
