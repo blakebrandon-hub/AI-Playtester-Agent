@@ -244,7 +244,7 @@ def call_agent(prompt: str) -> str:
 
     elif _openai:
         resp = _openai.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-mini",
             messages=[
                 {"role": "system", "content": PLAYTESTER_SYSTEM_PROMPT},
                 {"role": "user",   "content": prompt},
@@ -255,7 +255,7 @@ def call_agent(prompt: str) -> str:
 
     elif _gemini:
         resp = _gemini.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-3-flash-preview",
             contents=prompt,
             config=gtypes.GenerateContentConfig(
                 system_instruction=PLAYTESTER_SYSTEM_PROMPT,
